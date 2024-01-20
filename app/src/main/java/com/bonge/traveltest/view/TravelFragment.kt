@@ -73,10 +73,9 @@ class TravelFragment : BaseFragment<FragmentTravelBinding>(
     }
 
     private fun getAttractions(language: Language) {
-        loadingDialog.show()
+        setPagingDataAdapterLoading(adapter)
         launch {
             viewModel.getPagingData(language.value).collect {
-                loadingDialog.dismiss()
                 adapter.submitData(it)
             }
         }
