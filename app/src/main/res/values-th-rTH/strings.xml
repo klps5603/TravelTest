@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">เที่ยวไทเป</string>
+    <array name="language">
+        <item>ภาษาจีนตัวเต็ม</item>
+        <item>จีนตัวย่อ</item>
+        <item>ภาษาอังกฤษ</item>
+        <item>ภาษาญี่ปุ่น</item>
+        <item>เกาหลี</item>
+        <item>สเปน</item>
+        <item>ภาษาชาวอินโดนีเซีย</item>
+        <item>ไทย</item>
+        <item>เวียดนาม</item>
+    </array>
+</resources>

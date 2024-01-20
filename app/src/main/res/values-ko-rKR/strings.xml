@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">타이페이 여행</string>
+    <array name="language">
+        <item>중국어 번체</item>
+        <item>중국어 간체</item>
+        <item>영어</item>
+        <item>일본어</item>
+        <item>한국어</item>
+        <item>스페인어</item>
+        <item>인도네시아어</item>
+        <item>태국어</item>
+        <item>베트남어</item>
+    </array>
+</resources>

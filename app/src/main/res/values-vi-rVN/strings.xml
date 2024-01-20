@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">du lịch Đài Bắc</string>
+    <array name="language">
+        <item>Tiếng Trung phồn thể</item>
+        <item>Tiếng Trung giản thể</item>
+        <item>Tiếng Anh</item>
+        <item>Tiếng Nhật</item>
+        <item>Tiếng Hàn</item>
+        <item>Tiếng Tây Ban Nha</item>
+        <item>Tiếng Indonesia</item>
+        <item>Tiếng Thái</item>
+        <item>Tiếng Việt</item>
+    </array>
+</resources>

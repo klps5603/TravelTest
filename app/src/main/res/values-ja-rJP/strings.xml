@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">台北旅行</string>
+    <array name="language">
+        <item>繁体字中国語</item>
+        <item>簡体字中国語</item>
+        <item>英語</item>
+        <item>日本語</item>
+        <item>韓国語</item>
+        <item>スペイン語</item>
+        <item>インドネシア語</item>
+        <item>タイ語</item>
+        <item>ベトナム語</item>
+    </array>
+</resources>

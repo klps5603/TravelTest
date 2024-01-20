@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">viajes a taipei</string>
+    <array name="language">
+        <item>Chino tradicional</item>
+        <item>Chino simplificado</item>
+        <item>inglés</item>
+        <item>japonés</item>
+        <item>coreano</item>
+        <item>Español</item>
+        <item>indonesio</item>
+        <item>Tailandés</item>
+        <item>vietnamita</item>
+    </array>
+</resources>
