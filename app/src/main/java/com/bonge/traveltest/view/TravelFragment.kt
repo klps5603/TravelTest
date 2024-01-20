@@ -51,11 +51,12 @@ class TravelFragment : BaseFragment<FragmentTravelBinding>(
         return super.onOptionsItemSelected(item)
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
         setTitle(getString(R.string.app_name))
         setHasOptionsMenu(true)
 
+        setPagingDataAdapterLoading(adapter)
         adapter.setOnItemClickListener(object : TravelAdapter.OnItemClickListener {
             override fun onItemClick(travelResponse: TravelResponse) {
                 launch {
@@ -67,13 +68,15 @@ class TravelFragment : BaseFragment<FragmentTravelBinding>(
             }
 
         })
-
-        binding?.recyclerView?.adapter = adapter
         getAttractions(language)
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        binding?.recyclerView?.adapter = adapter
+    }
+
     private fun getAttractions(language: Language) {
-        setPagingDataAdapterLoading(adapter)
         launch {
             viewModel.getPagingData(language.value).collect {
                 adapter.submitData(it)
